@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{seo.title}} - {{post.title}}</title>
+    
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="{{url}}/slug">
+    <meta name="description" content="{{post.markdown}}">
+    <meta property="og:title" content="{{post.title}}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{post.url}}">
+    <meta property="og:description" content="{{post.markdown}}">
+    <meta property="og:image" content="{{post.image}}">
+    <meta name="twitter:card" content="summary">
+
+    <style type="text/css">
+      {{{css}}}
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <a href="{{url}}">
+        <h1>
+          {{seo.title}}
+        </h1>
+      </a>
+      <p>
+        {{{seo.html}}}
+      </p>
+    </header>
+    
+    <main>
+      <article>
+        <a href="
+          {{#if post.source}}
+            {{post.source}}
+          {{else}}
+            {{url}}/{{post.slug}}
+          {{/if}}
+          ">
+        <h2>
+          {{post.title}}
+        </h2>
+        </a>
+        <time>
+          {{post.prettyDate}}
+        </time>
+        <span class="meta">
+          {{#if post.author}}
+            by <a href="
+                {{url}}?author={{post.author}}
+              ">
+                {{post.author}}
+              </a>
+          {{/if}}
+          {{#if post.tags}}
+             <br/><b>tags:</b> {{#getTags url}}{{post.tags}}{{/getTags}}
+          {{/if}}
+        </span>
+        {{#if this.image}}
+          <img src="{{this.image}}" />
+        {{/if}}
+        {{{post.html}}}
+      </article>
+    </main>
+    
+    <footer>
+      <p>
+        <a href="{{url}}">{{seo.title}}</a> is powered by <a href="https://www.sheet-posting.me">sheet-posting</a><br/>
+        <a href="{{url}}">Home</a> | <a href="{{url}}/rss">RSS</a>
+      </p>
+    </footer>
+    
+    <script src="https://tyler-visitor-tracker.glitch.me/hey.js"></script>
+  </body>
+</html>

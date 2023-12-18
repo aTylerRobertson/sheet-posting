@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>sheet-posting</title>
+    
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://www.sheet-posting.me">
+    <meta name="description" content="Turn a Google Sheets spreadsheet into a blog page and RSS feed">
+    <meta property="og:title" content="sheet-posting">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.sheet-posting.me">
+    <meta property="og:description" content="Turn a Google Sheets spreadsheet into a blog page and RSS feed">
+    <meta property="og:image" content="https://cdn.glitch.global/ab5276db-75a2-4d46-aaf8-10282601967d/dall-e-colorful-spreadsheet.png?v=1662026254981">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet" href="the.css" />
+  </head>
+  <body>
+    
+    <header>
+      <a href="https://www.sheet-posting.me">
+        <h1>
+          sheet-posting
+        </h1>
+      </a>
+      <h2>
+        <i>turn your spreadsheet into a fully customizable blog</i>
+      </h2>
+    </header>
+    
+    <main>
+      <article>
+        <h1 id="howtouse">How to Use</h1>
+        <ul>
+          <li>Make a copy of <a href="https://docs.google.com/spreadsheets/d/1VZcd3MKIrrgRd9DrnUoEjEvzO4Gm6iDDBhw56i9CFXY/copy">this Google Sheets template</a></li>
+          <li>Select <strong>Share</strong></li>
+          <li>Update the sheet's permissions to <strong>"anyone on the internet with this link can view"</strong> and copy the link</li>
+          <li>Paste the link into the form below to get your unique blog URL</li>
+          <li>Add/edit posts as rows in the <strong>Posts</strong> sheet</li>
+          <li>Adjust your blog's look and feel in the <strong>CSS</strong> and <strong>SEO</strong> sheets</li>
+          <li>To unpublish the sheet, change its permissions back to "restricted"</li>
+        </ul>
+        
+        <form class="enter-url" method="post">
+          <label for="url">
+            Enter your spreadsheet's URL:
+          </label><br/>
+          <input id="url" name="url" required="required" type="text">
+          <button type="submit">Submit</button>
+        </form>
+        
+        <h1 id="sharediscover">Share &amp; Discover</h1>
+        <p>Want to see other sheet-posting blogs, or share your own?<br/><a href="/~1cCUbZjwGl4Dkq-rbSMyeTCtQUBwIhVzlrVKQxhOb010">Check out the blogring!</a></p>
+      </article>
+      <article>
+        <hr />
+        <p>sheet-posting was made by <a href="https://www.aTylerRobertson.com">tyler robertson</a>.<br/>if you enjoy this project, consider <a href="https://ko-fi.com/atylerrobertson">buying them a coffee</a>!</p>
+      </article>
+    </main>
+    <script src="https://tyler-visitor-tracker.glitch.me/hey.js"></script>
+  </body>
+</html>
