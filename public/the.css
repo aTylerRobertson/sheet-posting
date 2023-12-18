@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,900;1,900&display=swap');
+html {
+  font-size: 130%;
+}
+body {
+  font-family: "Source Serif Pro", serif;
+  background-color: #fdfdfa;
+}
+header,
+main,
+footer {
+  max-width: 720px;
+  width: 90vw;
+  margin: 2rem auto;
+  clear: both;
+}
+h1,h2,h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 0;
+}
+header h1 {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+}
+header h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+article h2,
+time,
+.meta,
+footer {
+  display: none;
+}
+article {
+  margin-top: 2rem;
+}
+.enter-url label {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+input {
+  width: 75%;
+  font-size: 1rem;
+}
+button {
+  font-size: 1rem;
+}
+a {
+  color: #38ada9;
+  text-decoration: none;
+}
+a:hover {
+  color: #079992;
+  text-decoration: underline;
+}
+li {
+  margin-bottom: 0.5rem;
+}
