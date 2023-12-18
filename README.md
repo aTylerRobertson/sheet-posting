@@ -14,11 +14,4 @@ Sheet-posting **does not save** any information about your spreadsheet. If you'd
 
 [Let me know!](https://www.aTylerRobertson.com)
 
-## to-do
-
-- compress the spreadsheet IDs for shorter URLs
-- better JSON error handling (right now, a lot of things return 500 errors, and usually mean something's not formatted correctly in the sheet)
-
-## support
-
 If you enjoyed this project, consider [buying me a coffee](https://ko-fi.com/atylerrobertson)!
