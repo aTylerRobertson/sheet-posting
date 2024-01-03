@@ -1,22 +1,22 @@
 {
   "name": "sheet-posting",
-  "version": "0.0.2",
-  "description": "create a blog page and rss feed from a google sheets spreadsheet",
+  "version": "1.0.0",
+  "description": "Create a blog page and rss feed from a google sheets spreadsheet",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
+    "@fastify/formbody": "^6.0.0",
+    "@fastify/static": "^5.0.0",
     "fastify": "^3.20.2",
-    "fastify-formbody": "^5.1.0",
-    "fastify-static": "^4.2.3",
     "handlebars": "^4.7.7",
-    "point-of-view": "^4.15.1",
     "node-fetch": "^2.6.1",
+    "point-of-view": "^4.15.1",
     "showdown": "^1.9.1"
   },
   "engines": {
-    "node": "12.x"
+    "node": "18.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/sheet-posting"
