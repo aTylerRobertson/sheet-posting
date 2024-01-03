@@ -1,6 +1,6 @@
 /* ::: ~~~ welcome to sheet-posting ~~~ ::: */
 /* ::: a blogging "platform" powered by Google Sheets ::: */
-/* ::: made by Tyler Robertson: https://tyler.robertson.click ::: */
+/* ::: made by Tyler Robertson: https://www.aTylerRobertson.com ::: */
 
 const fetch = require("node-fetch"),
       showdown = require("showdown"),
