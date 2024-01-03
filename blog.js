@@ -73,9 +73,9 @@ const getAllPosts = async id => {
     posts[i].parent = id;
   }
   
-  /* ::: Sort the posts by date ::: */
-  posts.sort((a,b) => b.date - a.date);
-  
+  /* ::: Sort the posts by date, and filter out future posts ::: */
+  posts = posts.filter((p) => p.date < Date.now()).sort((a,b) => b.date - a.date);
+
   // console.log(posts);
   return posts;
 }
